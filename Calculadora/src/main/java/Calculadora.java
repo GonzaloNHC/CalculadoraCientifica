@@ -203,4 +203,24 @@ public class Calculadora {
         Imprimir(x,"x= ");
         Imprimir(y,"y= ");
     }
+    /*--------------------------------------------------------------------------------------------------------------------------*/
+    public static double ResolverEcuaciondelarecta(){
+        double x1,y1,x2,y2;
+        double m,b;
+        System.out.println("Ingrese el primer punto:");
+        System.out.print("x: ");
+        x1 = Teclado();
+        System.out.print("y: ");
+        y1 = Teclado();
+        System.out.println("segundo punto");
+        System.out.print("x: ");
+        x2 = Teclado();
+        System.out.print("y: ");
+        y2 = Teclado();
+
+        m = (y2-y1)/(x2-x1);
+        b = y1-m*x1;
+
+        System.out.println("La ecuacion es y="+m+"x+"+b);
+    }
 }
